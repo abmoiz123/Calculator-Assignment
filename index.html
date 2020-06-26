@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="heading col-md-12">
+                    <h1>Calculator</h1>
+                </div>
+                <div class="col-md-3 col-sm-0"></div>
+                <div class="calc col-lg-6 col-md-6 col-sm-12">
+                    <div>
+                        <input id="result" type="text" class="display">
+                    </div>
+                    <div class="row">
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" id="del1" onclick="valueback()">DEL</button>
+                        </div>
+                        <div class="btn_div col-lg-6 col-md-6 col-sm-6 col-6">
+                            <button class="num" onclick="clearresult()">Clear</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('/')">/</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('7')">7</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('8')">8</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('9')">9</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('*')">x</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('4')">4</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('5')">5</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('6')">6</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('-')">-</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('3')">3</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('2')">2</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('1')">1</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('+')">+</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('.')">.</button>
+                        </div>
+                        <div class="btn_div col-lg-3 col-md-3 col-sm-3 col-3">
+                            <button class="num" onclick="getNumber('0')">0</button>
+                        </div>
+                        <div class="btn_div col-lg-6 col-md-6 col-sm-6 col-6">
+                            <button class="num" id="equal" onclick="getresult()">=</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-0"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="App.js"></script>
+
+</html>
